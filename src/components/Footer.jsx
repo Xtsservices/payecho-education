@@ -1,23 +1,29 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-navy-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">xpresedu</h3>
+            <Link to="/" className="inline-block mb-4">
+              <img 
+                src="/learn.png" 
+                alt="Learn Miles Logo" 
+                className="h-12 w-auto"
+              />
+            </Link>
             <p className="text-gray-300 mb-4">
-              Independent institution with top notch education & research, promoting lifelong learning and supporting teachers.
+              At LEARN MILES, (PAY ECHO SOLUTIONS PRIVATE LIMITED), we bridge the gap between learning and success by delivering high-quality training programs and strategic career mentorship.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
+              <Facebook className="w-5 h-5 text-navy-400 hover:text-amber-400 cursor-pointer transition-colors" />
+              <Twitter className="w-5 h-5 text-navy-400 hover:text-amber-400 cursor-pointer transition-colors" />
+              <Linkedin className="w-5 h-5 text-navy-400 hover:text-amber-400 cursor-pointer transition-colors" />
+              <Instagram className="w-5 h-5 text-navy-400 hover:text-amber-400 cursor-pointer transition-colors" />
             </div>
           </div>
 
@@ -49,25 +55,30 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-300">support@xpresedu.com</span>
+                <Mail className="w-5 h-5 text-amber-400" />
+                <span className="text-gray-300">support@learnmiles.in</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <Phone className="w-5 h-5 text-amber-400" />
+                <span className="text-gray-300">77996 84747</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-300">123 Education St, Learning City</span>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
+                <span className="text-gray-300 leading-relaxed">
+                  Flat no: 401, Plot no HIG 115, INTURI CHAMBERS, 6th Phase, 
+                  KPHB Colony, Kukatpally, Hyderabad-500085
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <div className="border-t border-navy-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 xpresedu. All rights reserved. | 
-            <span className="text-blue-400 ml-1">Themes by WordPress</span>
+            © {new Date().getFullYear()} LEARN MILES (PAY ECHO SOLUTIONS PRIVATE LIMITED). All rights reserved. |
+            <span className="text-amber-400 ml-1">
+              Transforming Ambition into Achievement
+            </span>
           </p>
         </div>
       </div>
@@ -76,3 +87,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -124,7 +124,7 @@ const Register = () => {
   const strength = passwordStrength();
 
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center py-12">
+    <div className="min-h-screen pt-20 bg-gradient-to-br from-navy-50 to-navy-100 flex items-center justify-center py-12">
       <div className="max-w-md w-full mx-4">
         <Card className="shadow-2xl border-0">
           <CardHeader className="text-center pb-4">
@@ -154,7 +154,7 @@ const Register = () => {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       placeholder="John"
-                      className="pl-10 h-11 border-2 focus:border-blue-500"
+                      className="pl-10 h-11 border-2 focus:border-navy-600"
                       required
                     />
                   </div>
@@ -171,7 +171,7 @@ const Register = () => {
                       value={formData.lastName}
                       onChange={handleInputChange}
                       placeholder="Doe"
-                      className="pl-10 h-11 border-2 focus:border-blue-500"
+                      className="pl-10 h-11 border-2 focus:border-navy-600"
                       required
                     />
                   </div>
@@ -190,7 +190,7 @@ const Register = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="john.doe@example.com"
-                    className="pl-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 h-12 border-2 focus:border-navy-600"
                     required
                   />
                 </div>
@@ -208,7 +208,7 @@ const Register = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="+1 (555) 123-4567"
-                    className="pl-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 h-12 border-2 focus:border-navy-600"
                   />
                 </div>
               </div>
@@ -225,7 +225,7 @@ const Register = () => {
                     value={formData.password}
                     onChange={handleInputChange}
                     placeholder="Create a strong password"
-                    className="pl-10 pr-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 pr-10 h-12 border-2 focus:border-navy-600"
                     required
                   />
                   <button
@@ -266,7 +266,7 @@ const Register = () => {
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
                     placeholder="Confirm your password"
-                    className="pl-10 pr-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 pr-10 h-12 border-2 focus:border-navy-600"
                     required
                   />
                   <button
@@ -291,15 +291,15 @@ const Register = () => {
                   id="terms"
                   checked={acceptTerms}
                   onChange={(e) => setAcceptTerms(e.target.checked)}
-                  className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1"
+                  className="w-4 h-4 text-navy-600 border-gray-300 rounded focus:ring-navy-600 mt-1"
                 />
                 <label htmlFor="terms" className="text-sm text-gray-600 leading-relaxed">
                   I agree to the{" "}
-                  <Link to="/terms" className="text-blue-600 hover:text-blue-700 font-medium">
+                  <Link to="/terms" className="text-navy-600 hover:text-navy-700 font-medium">
                     Terms of Service
                   </Link>{" "}
                   and{" "}
-                  <Link to="/privacy" className="text-blue-600 hover:text-blue-700 font-medium">
+                  <Link to="/privacy" className="text-navy-600 hover:text-navy-700 font-medium">
                     Privacy Policy
                   </Link>
                 </label>
@@ -349,7 +349,7 @@ const Register = () => {
                 Already have an account?{" "}
                 <Link
                   to="/login"
-                  className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                  className="text-navy-600 hover:text-navy-700 font-semibold transition-colors"
                 >
                   Sign in here
                 </Link>
@@ -363,3 +363,4 @@ const Register = () => {
 };
 
 export default Register;
+

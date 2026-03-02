@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { 
@@ -56,7 +56,7 @@ const About = () => {
       icon: Target,
       title: "Excellence",
       description: "We strive for excellence in everything we do, from course content to student support.",
-      color: "bg-blue-500"
+      color: "bg-navy-600"
     },
     {
       icon: Users,
@@ -76,13 +76,13 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-gradient-to-r from-navy-800 to-navy-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About xpresedu
+            About LEARN MILES
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Independent institution with top notch education & research, promoting lifelong learning and supporting teachers worldwide.
+          <p className="text-xl text-navy-100 max-w-3xl mx-auto">
+            PAY ECHO SOLUTIONS PRIVATE LIMITED — bridging the gap between learning and success through high-quality training programs and strategic career mentorship.
           </p>
         </div>
       </section>
@@ -98,17 +98,17 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+              <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
                 Our Mission
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Empowering Learners Globally Through Quality Education
+                Empowering Learners Through Quality Education & Career Growth
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                At xpresedu, we believe that quality education should be accessible to everyone, regardless of their geographical location or background. Our mission is to democratize learning by providing world-class educational content and personalized learning experiences.
+                At LEARN MILES, we believe that quality education should be accessible to everyone. Our mission is to bridge the gap between learning and success by delivering industry-relevant training programs tailored to the needs of modern professionals.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We are committed to supporting both learners and educators in their journey of knowledge sharing and skill development, creating a global community of continuous learners.
+                We are committed to supporting both learners and educators through strategic career mentorship, hands-on learning experiences, and a strong professional community — transforming ambition into achievement.
               </p>
             </div>
             <div className="relative">
@@ -117,8 +117,8 @@ const About = () => {
                 alt="Students learning together"
                 className="rounded-lg shadow-xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold">2015</div>
+              <div className="absolute -bottom-6 -right-6 bg-amber-500 text-navy-900 p-6 rounded-lg shadow-lg">
+                <div className="text-2xl font-bold">2020</div>
                 <div className="text-sm">Founded</div>
               </div>
             </div>
@@ -136,7 +136,7 @@ const About = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Our Values
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -158,7 +158,7 @@ const About = () => {
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${value.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <value.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-navy-600 transition-colors">
                     {value.title}
                   </CardTitle>
                 </CardHeader>
@@ -183,7 +183,7 @@ const About = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Our Impact
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -199,10 +199,10 @@ const About = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-8 pb-6">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                    <achievement.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-navy-100 rounded-full flex items-center justify-center group-hover:bg-navy-200 transition-colors">
+                    <achievement.icon className="w-8 h-8 text-navy-600" />
                   </div>
-                  <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-navy-600 transition-colors">
                     {achievement.number}
                   </div>
                   <p className="text-gray-600 font-medium">
@@ -225,14 +225,14 @@ const About = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Our Team
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Meet Our Expert Instructors
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Our team consists of industry experts and passionate educators dedicated to helping you achieve your learning goals.
+              Our team consists of industry experts and passionate educators from Hyderabad and beyond, dedicated to helping you achieve your career and learning goals.
             </p>
           </div>
 
@@ -251,10 +251,10 @@ const About = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-navy-600 transition-colors">
                     {instructor.name}
                   </CardTitle>
-                  <CardDescription className="text-blue-600 font-medium">
+                  <CardDescription className="text-navy-600 font-medium">
                     {instructor.expertise}
                   </CardDescription>
                 </CardHeader>
@@ -294,7 +294,7 @@ const About = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Success Stories
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -327,7 +327,7 @@ const About = () => {
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.name}</div>
                       <div className="text-sm text-gray-600">{testimonial.role}</div>
-                      <div className="text-sm text-blue-600">{testimonial.company}</div>
+                      <div className="text-sm text-navy-600">{testimonial.company}</div>
                     </div>
                   </div>
                 </CardContent>
@@ -341,3 +341,4 @@ const About = () => {
 };
 
 export default About;
+

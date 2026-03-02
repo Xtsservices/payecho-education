@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
@@ -50,12 +50,12 @@ const Courses = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-gradient-to-r from-navy-800 to-navy-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Explore Our Courses
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-navy-100 max-w-3xl mx-auto">
             Discover expert-led courses designed to help you achieve your learning goals and advance your career.
           </p>
         </div>
@@ -154,7 +154,7 @@ const Courses = () => {
                   </div>
 
                   <CardHeader className="pb-4">
-                    <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-navy-600 transition-colors line-clamp-2">
                       {course.title}
                     </CardTitle>
                     <CardDescription className="text-gray-600 line-clamp-3">
@@ -190,7 +190,7 @@ const Courses = () => {
                       </div>
                       <Button
                         onClick={() => handleEnroll(course.title)}
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 transition-all duration-300 hover:scale-105"
+                        className="bg-navy-600 hover:bg-navy-700 text-white px-6 transition-all duration-300 hover:scale-105"
                       >
                         Enroll Now
                       </Button>
@@ -207,3 +207,4 @@ const Courses = () => {
 };
 
 export default Courses;
+
