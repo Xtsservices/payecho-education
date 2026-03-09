@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -56,7 +56,7 @@ const Contact = () => {
       description: "Send us an email anytime",
       value: mockContactInfo.email,
       action: `mailto:${mockContactInfo.email}`,
-      color: "bg-blue-500"
+      color: "bg-navy-600"
     },
     {
       icon: Phone,
@@ -100,12 +100,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-gradient-to-r from-navy-800 to-navy-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-navy-100 max-w-3xl mx-auto">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${method.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <method.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-navy-600 transition-colors">
                     {method.title}
                   </CardTitle>
                   <CardDescription className="text-gray-600">
@@ -218,7 +218,7 @@ const Contact = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 hover:scale-105"
+                    className="w-full h-12 bg-navy-600 hover:bg-navy-700 text-white font-semibold transition-all duration-300 hover:scale-105"
                   >
                     {isSubmitting ? (
                       "Sending..."
@@ -245,7 +245,7 @@ const Contact = () => {
                   {supportOptions.map((option, index) => (
                     <div key={option.title} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
                       <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <option.icon className="w-6 h-6 text-blue-600" />
+                        <option.icon className="w-6 h-6 text-navy-600" />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">{option.title}</h4>
@@ -262,7 +262,7 @@ const Contact = () => {
               <Card className="shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                    <Clock className="w-5 h-5 mr-2 text-blue-600" />
+                    <Clock className="w-5 h-5 mr-2 text-navy-600" />
                     Business Hours
                   </CardTitle>
                 </CardHeader>
@@ -295,7 +295,7 @@ const Contact = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Frequently Asked Questions
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -314,7 +314,7 @@ const Contact = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <CardTitle className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-lg font-semibold text-gray-900 group-hover:text-navy-600 transition-colors">
                     {faq.question}
                   </CardTitle>
                 </CardHeader>
@@ -333,3 +333,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

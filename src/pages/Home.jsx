@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
@@ -59,7 +59,7 @@ const Home = () => {
       icon: Monitor,
       title: "Online Course",
       description: "Learn anytime, anywhere with expert-led online courses designed for you",
-      color: "bg-blue-500"
+      color: "bg-navy-600"
     },
     {
       icon: Users,
@@ -139,28 +139,32 @@ const Home = () => {
       <section
         id="hero"
         data-animate
-        className={`relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 transition-all duration-1000 ${
+        className={`relative min-h-screen flex items-center justify-center bg-gradient-to-br from-navy-50 to-navy-100 transition-all duration-1000 ${
           isVisible.hero ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
         style={{
-          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)), url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')`,
+          backgroundImage: `linear-gradient(rgba(27, 58, 107, 0.12), rgba(15, 36, 64, 0.12)), url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-indigo-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-900/30 via-navy-800/15 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
-              INDEPENDENT INSTITUTION WITH
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
+              Inspiring Growth & Innovation
             </Badge>
+
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Top Notch Education
-              <span className="block text-blue-600">& Research</span>
+              Elevate Your Skills with
+              <span className="block text-amber-500">Industry-Focused Learning</span>
             </h1>
+
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Explore your abilities with xpresedu personalized tools, promoting lifelong learning and supporting teachers. Join us our mission for accessible and impactful education.
+              Gain real-world knowledge through expertly crafted programs designed to
+              strengthen your expertise and accelerate your professional journey.
+              Learn smarter, grow faster, and achieve more with guided mentorship.
             </p>
           </div>
 
@@ -171,13 +175,13 @@ const Home = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-12 text-lg bg-white/90 backdrop-blur-sm border-2 border-blue-200 focus:border-blue-500"
+                className="flex-1 h-12 text-lg bg-white/90 backdrop-blur-sm border-2 border-navy-200 focus:border-navy-600"
                 required
               />
               <Button
                 type="submit"
                 size="lg"
-                className="h-12 px-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="h-12 px-8 bg-amber-500 hover:bg-amber-600 text-navy-900 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 Sign Up
               </Button>
@@ -206,7 +210,7 @@ const Home = () => {
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-navy-600 transition-colors">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
@@ -225,7 +229,7 @@ const Home = () => {
       <section
         id="stats"
         data-animate
-        className={`py-20 bg-gradient-to-r from-blue-50 to-indigo-50 transition-all duration-1000 delay-400 ${
+        className={`py-20 bg-gradient-to-r from-navy-50 to-navy-50 transition-all duration-1000 delay-400 ${
           isVisible.stats ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
         style={{
@@ -236,12 +240,12 @@ const Home = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Flexible supported learning
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Expertise Across All
-              <span className="block text-blue-600">Disciplines</span>
+              <span className="block text-amber-500">Disciplines</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               xpresedu provides learning support in all areas of study, offering a complete educational experience for every learner.
@@ -256,10 +260,10 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-8 pb-6">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                    <stat.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-navy-100 rounded-full flex items-center justify-center group-hover:bg-navy-200 transition-colors">
+                    <stat.icon className="w-8 h-8 text-navy-600" />
                   </div>
-                  <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-navy-600 transition-colors">
                     {stat.number}
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -282,12 +286,12 @@ const Home = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 text-sm bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+            <Badge className="mb-4 text-sm bg-navy-100 text-navy-800 hover:bg-navy-200 transition-colors">
               Price Planes
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Price Plans View our course
-              <span className="block text-blue-600">offerings And our planned fee schedule</span>
+              <span className="block text-amber-500">offerings And our planned fee schedule</span>
             </h2>
           </div>
 
@@ -297,13 +301,13 @@ const Home = () => {
                 key={plan.name}
                 className={`relative group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
                   plan.popular
-                    ? "ring-2 ring-blue-500 shadow-xl scale-105"
+                    ? "ring-2 ring-amber-500 shadow-xl scale-105"
                     : "hover:shadow-xl"
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {plan.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-1">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-navy-900 font-semibold px-6 py-1">
                     Popular
                   </Badge>
                 )}
@@ -331,7 +335,7 @@ const Home = () => {
                   <Button
                     className={`w-full mt-6 py-3 font-semibold transition-all duration-300 hover:scale-105 ${
                       plan.popular
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
+                        ? "bg-navy-600 hover:bg-navy-700 text-white"
                         : "bg-gray-100 hover:bg-gray-200 text-gray-900 border border-gray-300"
                     }`}
                   >
@@ -354,3 +358,4 @@ const Home = () => {
 };
 
 export default Home;
+

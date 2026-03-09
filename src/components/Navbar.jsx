@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback } from "./ui/avatar";
@@ -66,9 +66,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link
             to="/"
-            className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            xpresedu
+            <img 
+              src="/learn.png" 
+              alt="Learn Miles Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -77,9 +81,9 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-gray-700 hover:text-blue-600 transition-colors font-medium ${
+                className={`text-navy-800 hover:text-navy-600 transition-colors font-medium ${
                   location.pathname === item.path
-                    ? "text-blue-600 border-b-2 border-blue-600"
+                    ? "text-amber-500 border-b-2 border-amber-500"
                     : ""
                 }`}
               >
@@ -92,8 +96,8 @@ const Navbar = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="relative h-10 w-10 rounded-full">
-                    <Avatar className="h-10 w-10 border-2 border-blue-200 hover:border-blue-400 transition-colors">
-                      <AvatarFallback className="bg-blue-100 text-blue-700 font-semibold">
+                    <Avatar className="h-10 w-10 border-2 border-navy-200 hover:border-navy-400 transition-colors">
+                      <AvatarFallback className="bg-navy-100 text-navy-700 font-semibold">
                         {getInitials(user.name)}
                       </AvatarFallback>
                     </Avatar>
@@ -135,13 +139,13 @@ const Navbar = () => {
                 <Link to="/login">
                   <Button 
                     variant="ghost" 
-                    className="text-gray-700 hover:text-blue-600 font-medium"
+                    className="text-navy-700 hover:text-navy-900 font-medium"
                   >
                     Sign In
                   </Button>
                 </Link>
                 <Link to="/register">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105">
+                  <Button className="bg-amber-500 hover:bg-amber-600 text-navy-900 font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105">
                     Get Started
                   </Button>
                 </Link>
@@ -169,8 +173,8 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`block py-2 text-gray-700 hover:text-blue-600 transition-colors ${
-                  location.pathname === item.path ? "text-blue-600 font-semibold" : ""
+                className={`block py-2 text-navy-800 hover:text-navy-600 transition-colors ${
+                  location.pathname === item.path ? "text-amber-500 font-semibold" : ""
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -182,8 +186,8 @@ const Navbar = () => {
               {isAuthenticated() ? (
                 <div className="space-y-2">
                   <div className="flex items-center space-x-3 p-2">
-                    <Avatar className="h-8 w-8 border-2 border-blue-200">
-                      <AvatarFallback className="bg-blue-100 text-blue-700 text-sm">
+                    <Avatar className="h-8 w-8 border-2 border-navy-200">
+                      <AvatarFallback className="bg-navy-100 text-navy-700 text-sm">
                         {getInitials(user.name)}
                       </AvatarFallback>
                     </Avatar>
@@ -194,7 +198,7 @@ const Navbar = () => {
                   </div>
                   <Button
                     variant="ghost"
-                    className="w-full justify-start text-gray-700 hover:text-blue-600"
+                    className="w-full justify-start text-gray-700 hover:text-navy-600"
                     onClick={() => setIsOpen(false)}
                   >
                     <User className="mr-2 h-4 w-4" />
@@ -202,7 +206,7 @@ const Navbar = () => {
                   </Button>
                   <Button
                     variant="ghost"
-                    className="w-full justify-start text-gray-700 hover:text-blue-600"
+                    className="w-full justify-start text-gray-700 hover:text-navy-600"
                     onClick={() => setIsOpen(false)}
                   >
                     <BookOpen className="mr-2 h-4 w-4" />
@@ -223,12 +227,12 @@ const Navbar = () => {
               ) : (
                 <div className="space-y-2">
                   <Link to="/login" onClick={() => setIsOpen(false)}>
-                    <Button variant="ghost" className="w-full justify-start text-gray-700 hover:text-blue-600">
+                    <Button variant="ghost" className="w-full justify-start text-gray-700 hover:text-navy-600">
                       Sign In
                     </Button>
                   </Link>
                   <Link to="/register" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button className="w-full bg-amber-500 hover:bg-amber-600 text-navy-900 font-semibold">
                       Get Started
                     </Button>
                   </Link>
@@ -243,3 +247,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -1,4 +1,4 @@
-// Mock data for xpresedu website
+﻿// Mock data for xpresedu website
 
 export const mockCourses = [
   {
@@ -181,14 +181,14 @@ export const mockWebinars = [
 ];
 
 export const mockContactInfo = {
-  email: "support@xpresedu.com",
-  phone: "+91 98765 43210",
-  address: "123 Education Street, Learning City, LC 400001",
+  email: "support@learnmiles.in",
+  phone: "77996 84747",
+  address: "Flat no: 401, Plot no HIG 115, INTURI CHAMBERS, 6th Phase, KPHB Colony, Kukatpally, Hyderabad-500085",
   socialMedia: {
-    facebook: "https://facebook.com/xpresedu",
-    twitter: "https://twitter.com/xpresedu",
-    linkedin: "https://linkedin.com/company/xpresedu",
-    instagram: "https://instagram.com/xpresedu"
+    facebook: "https://facebook.com/learnmiles",
+    twitter: "https://twitter.com/learnmiles",
+    linkedin: "https://linkedin.com/company/learnmiles",
+    instagram: "https://instagram.com/learnmiles"
   }
 };
 
@@ -219,3 +219,4 @@ export const mockFAQs = [
     answer: "Most of our courses are self-paced, allowing you to learn at your convenience. However, we also offer live webinars and scheduled sessions for interactive learning."
   }
 ];
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -58,12 +58,12 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center py-12">
+    <div className="min-h-screen pt-20 bg-gradient-to-br from-navy-50 to-navy-100 flex items-center justify-center py-12">
       <div className="max-w-md w-full mx-4">
         <Card className="shadow-2xl border-0">
           <CardHeader className="text-center pb-4">
-            <div className="w-20 h-20 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">
-              <Lock className="w-10 h-10 text-white" />
+            <div className="w-20 h-20 mx-auto mb-4 bg-navy-800 rounded-full flex items-center justify-center">
+              <Lock className="w-10 h-10 text-amber-400" />
             </div>
             <CardTitle className="text-2xl font-bold text-gray-900">
               Welcome Back
@@ -87,7 +87,7 @@ const Login = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Enter your email"
-                    className="pl-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 h-12 border-2 focus:border-navy-600"
                     required
                   />
                 </div>
@@ -105,7 +105,7 @@ const Login = () => {
                     value={formData.password}
                     onChange={handleInputChange}
                     placeholder="Enter your password"
-                    className="pl-10 pr-10 h-12 border-2 focus:border-blue-500"
+                    className="pl-10 pr-10 h-12 border-2 focus:border-navy-600"
                     required
                   />
                   <button
@@ -122,13 +122,13 @@ const Login = () => {
                 <label className="flex items-center space-x-2 cursor-pointer">
                   <input
                     type="checkbox"
-                    className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    className="w-4 h-4 text-navy-600 border-gray-300 rounded focus:ring-navy-600"
                   />
                   <span className="text-sm text-gray-600">Remember me</span>
                 </label>
                 <Link
                   to="/forgot-password"
-                  className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+                  className="text-sm text-navy-600 hover:text-navy-700 font-medium"
                 >
                   Forgot password?
                 </Link>
@@ -137,7 +137,7 @@ const Login = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 hover:scale-105"
+                className="w-full h-12 bg-navy-600 hover:bg-navy-700 text-white font-semibold transition-all duration-300 hover:scale-105"
               >
                 {isLoading ? (
                   "Signing in..."
@@ -189,7 +189,7 @@ const Login = () => {
                 Don't have an account?{" "}
                 <Link
                   to="/register"
-                  className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                  className="text-navy-600 hover:text-navy-700 font-semibold transition-colors"
                 >
                   Sign up now
                 </Link>
@@ -201,11 +201,11 @@ const Login = () => {
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">
             By continuing, you agree to our{" "}
-            <Link to="/terms" className="text-blue-600 hover:text-blue-700">
+            <Link to="/terms" className="text-navy-600 hover:text-navy-700">
               Terms of Service
             </Link>{" "}
             and{" "}
-            <Link to="/privacy" className="text-blue-600 hover:text-blue-700">
+            <Link to="/privacy" className="text-navy-600 hover:text-navy-700">
               Privacy Policy
             </Link>
           </p>
@@ -216,3 +216,4 @@ const Login = () => {
 };
 
 export default Login;
+

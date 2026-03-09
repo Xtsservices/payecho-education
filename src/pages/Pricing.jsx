@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
@@ -136,12 +136,12 @@ const Pricing = () => {
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-gradient-to-r from-navy-800 to-navy-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Choose Your Learning Plan
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-navy-100 max-w-3xl mx-auto">
             Select the perfect plan that fits your learning goals and budget. All plans include access to our quality content and expert instructors.
           </p>
         </div>
@@ -156,13 +156,13 @@ const Pricing = () => {
                 key={plan.name}
                 className={`relative group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
                   plan.popular
-                    ? "ring-2 ring-blue-500 shadow-xl scale-105"
+                    ? "ring-2 ring-amber-500 shadow-xl scale-105"
                     : "hover:shadow-xl"
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {plan.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-1">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-navy-900 font-semibold px-6 py-1">
                     Most Popular
                   </Badge>
                 )}
@@ -209,7 +209,7 @@ const Pricing = () => {
                     onClick={() => handlePurchase(plan.name)}
                     className={`w-full mt-6 py-3 font-semibold transition-all duration-300 hover:scale-105 ${
                       plan.popular
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
+                        ? "bg-navy-600 hover:bg-navy-700 text-white"
                         : "bg-gray-100 hover:bg-gray-200 text-gray-900 border border-gray-300"
                     }`}
                   >
@@ -293,3 +293,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
